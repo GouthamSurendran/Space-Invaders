@@ -5,6 +5,10 @@ import math
 from pygame import mixer
 import time
 
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
+
 def start():
     global play
     os.environ['SDL_VIDEO_CENTERED'] = '1'  # Center Pygame window
